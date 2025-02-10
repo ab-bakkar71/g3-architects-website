@@ -112,6 +112,52 @@ main > section{
   color: #FF900E;
   font-weight: bold;
  }
+ /* Features love & enjoy */
+ #feature-section-title{
+  border-left: 5px solid #FF900E;
+  padding-left: 20px;
+ }
+ .love-enjoy{
+  display: flex;
+  gap: 150px;
+ }
+ .feature-card{
+  width: 586px;
+  height: 171px;
+  margin-top: 20px;
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  
+ }
+ .feature-card-title{
+  color: #131313;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 30px 0px 10px 30px;
+ }
+.feature-card-dsc{
+  color: #727272;
+  padding-left: 30px;
+}
+#experience-bage{
+  width: 342px;
+  height: 200px;
+  border-radius: 8px;
+  margin-left: -92px;
+  margin-top: -123px;
+}
+#experience-year{
+  font-size: 4rem;
+  font-weight: 700;
+}
+.experience-year{
+  font-size: 25px;
+  font-weight: 500;
+}
+.feature-architect img{
+  width: 100%;
+}
 
 /* some facts style */
 .facts-container{
@@ -174,11 +220,33 @@ main > section{
   filter: grayscale(100%);
 }
 
+/* footer style */
+footer{
+  max-width: 1440px;
+  height: 50px;
+  border-radius: 8px;
+  background: #FFF4E7;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+.footer-credit{
+  color: #424242;
+  font-size: 1.25rem;
+  text-align: center;
+  padding-top: 15px;
+
+}
+.footer-credit span {
+  font-weight: bold;
+  color: #ff3c00;
+}
+
  /* responsive small device */
  @media screen and (max-width: 576px) {
   .navbar, 
   .nav-links, 
-  .teams{
+  .teams,
+  .love-enjoy{
     flex-direction: column;
   }
   .team-image, 
@@ -209,12 +277,22 @@ main > section{
   .banner-img{
     max-width: 95%;
   }
+  #experience-bage{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .feature-card{
+    width: 100%;
+  }
+  footer{
+    height: 65px;
+  }
  }
 
   /* responsive medium device */
   @media screen and (min-width: 576px) and (
     max-width: 992px) {
-    .teams{
+    .teams, .love-enjoy{
       flex-direction: column;
     }
     .our-features{
@@ -240,6 +318,10 @@ main > section{
   }
   main > section{
     margin-top: 50px;
+  }
+  #experience-bage{
+    margin-top: 20px;
+    margin-left: 20px;
   }
 
   }
